@@ -1,5 +1,6 @@
 import { Cat } from "lucide-react";
 import BrutalCard from "../ui/brutal-card";
+import { Button } from "../ui/button";
 
 export default function Header() {
   return (
@@ -17,7 +18,14 @@ export default function Header() {
           <p>Team</p>
           <p>Contact</p>
         </nav>
-        <div>BROWSE MAPS</div>
+        <div className="space-x-3">
+          <Button className="bg-blue-300/80 text-xs font-semibold text-black" size={"sm"}>
+            BROWSE MAP
+          </Button>
+          <Button className="text-xs font-semibold text-white" size={"sm"}>
+            PLAY NOW
+          </Button>
+        </div>
       </div>
     </header>
   );

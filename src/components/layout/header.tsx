@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 export default function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b-2">
-      <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-3.5">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3.5">
         <div className="flex items-center gap-3">
           <BrutalCard className="p-1.5">
             <Cat className="size-5 text-white" />

@@ -1,11 +1,13 @@
-import { PawPrint, Play } from "lucide-react";
+import { Cat, PawPrint, Play } from "lucide-react";
 import MaxWidthWrapper from "../layout/max-width-wrapper";
 import { Button } from "../ui/button";
+import heroCat from "@/assets/hero-cat.jpg";
+import BrutalCard from "../ui/brutal-card";
 
 export default function HeroSection() {
   return (
     <section id="hero">
-      <MaxWidthWrapper className="relative flex min-h-screen items-center justify-between pt-18">
+      <MaxWidthWrapper className="relative flex min-h-screen items-center justify-between gap-5 pt-18">
         <div className="flex max-w-120 flex-col gap-6">
           <div className="inline-block">
             <span className="bg-foreground text-secondary-background px-4 py-2 text-xs font-bold tracking-wider uppercase">
@@ -53,7 +55,25 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="relative">
-          <img src="" alt="" />
+          <BrutalCard>
+            <img
+              src={heroCat}
+              alt="Keonk Studio Mascot"
+              className="h-auto w-full max-w-md object-cover"
+            />
+          </BrutalCard>
+
+          <BrutalCard className="brutal-card absolute -bottom-4 -left-4 bg-red-500 p-4">
+            <div className="flex items-center gap-3">
+              <BrutalCard className="flex h-10 w-10 items-center justify-center">
+                <Cat className="h-5 w-5 text-white" />
+              </BrutalCard>
+              <div>
+                <p className="font-display text-sm font-bold uppercase">Meow World</p>
+                <p className="text-muted-foreground text-xs">Latest Map 2025</p>
+              </div>
+            </div>
+          </BrutalCard>
         </div>
       </MaxWidthWrapper>
     </section>

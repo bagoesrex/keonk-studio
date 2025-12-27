@@ -10,8 +10,8 @@ export default function BrutalCard({ children, className }: BrutalCardProps) {
     <div
       className={cn(
         "bg-main border-2 border-black",
-        "shadow-[3px_3px_0_#000]",
-        "hover:shadow-[3px_3px_0_#000]",
+        "shadow-[3.5px_3.5px_0_#000]",
+        "hover:shadow-[3.5px_3.5px_0_#000]",
         className,
       )}
     >

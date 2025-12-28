@@ -10,7 +10,7 @@ export default function Header() {
           <BrutalCard className="p-1.5">
             <Cat className="size-5 text-white" />
           </BrutalCard>
-          <span className="text-[15px] font-semibold">KEONK STUDIO</span>
+          <span className="text-[15px] font-bold">KEONK STUDIO</span>
         </div>
         <nav className="flex items-center gap-5 text-sm">
           <p>Features</p>

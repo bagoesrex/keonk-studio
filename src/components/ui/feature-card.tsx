@@ -1,16 +1,25 @@
 import type { LucideIcon } from "lucide-react";
 import BrutalCard from "./brutal-card";
+import { cn } from "@/lib/utils";
 
 interface FeatureCardProps {
   icon: LucideIcon;
   label: string;
   description: string;
+  iconClassName?: string;
 }
 
-export default function FeatureCard({ icon: Icon, label, description }: FeatureCardProps) {
+export default function FeatureCard({
+  icon: Icon,
+  label,
+  description,
+  iconClassName,
+}: FeatureCardProps) {
   return (
     <BrutalCard className="bg-secondary-background space-y-5 px-6 py-4">
-      <BrutalCard className="flex h-13 w-13 items-center justify-center">
+      <BrutalCard
+        className={cn("bg-main flex h-13 w-13 items-center justify-center", iconClassName)}
+      >
         <Icon className="h-6 w-6 text-white" />
       </BrutalCard>
       <div className="space-y-3">

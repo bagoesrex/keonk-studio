@@ -13,11 +13,13 @@ const featureItems = [
     icon: Cat,
     label: "Cat Themed",
     description: "Every creation is inspired by adorable and charming feline characters.",
+    iconClassName: "bg-chart-1",
   },
   {
     icon: Palette,
     label: "Creative Design",
     description: "Beautiful visuals with attention to every detail in our maps.",
+    iconClassName: "bg-yellow-400",
   },
 ];
 
@@ -30,7 +32,12 @@ export default function FeaturesSection() {
         </BrutalCard>
         <div className="grid grid-cols-3 gap-6">
           {featureItems.map((item) => (
-            <FeatureCard icon={item.icon} label={item.label} description={item.description} />
+            <FeatureCard
+              icon={item.icon}
+              label={item.label}
+              description={item.description}
+              iconClassName={item.iconClassName}
+            />
           ))}
         </div>
       </MaxWidthWrapper>

@@ -7,7 +7,7 @@ import BrutalCard from "../ui/brutal-card";
 export default function HeroSection() {
   return (
     <section id="hero">
-      <MaxWidthWrapper className="relative flex min-h-screen items-center justify-between gap-5 pt-18">
+      <MaxWidthWrapper className="relative flex min-h-screen items-center justify-between gap-5 py-30">
         <div className="flex max-w-120 flex-col gap-6">
           <div className="inline-block">
             <span className="bg-foreground text-secondary-background px-4 py-2 text-xs font-bold tracking-wider uppercase">
